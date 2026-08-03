@@ -13,24 +13,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="background-orb orb-1"></div>
-    <div class="background-orb orb-2"></div>
-    <div class="background-orb orb-3"></div>
-    <div class="bg-lines"></div>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <div class="ambient ambient-c"></div>
+    <div class="grain"></div>
     <div class="particle-field" aria-hidden="true"></div>
 
-    <header class="topbar">
-      <div class="logo-wrap">
-        <div class="brand-badge" aria-label="Logo creativo de Johana Laica">
-          <span class="brand-ring"></span>
-          <span class="brand-code">&lt;/&gt;</span>
-          <span class="brand-monogram">JL</span>
-        </div>
-        <div>
-          <span class="logo-text">Johana Laica</span>
-          <small class="logo-subtitle">Ingeniería en Software</small>
-        </div>
-      </div>
+    <header class="topbar glass">
+      <a class="brand-badge" href="#inicio" aria-label="Logo creativo de Johana Laica">
+        <span class="brand-ring"></span>
+        <span class="brand-monogram">JL</span>
+      </a>
 
       <nav class="nav-menu">
         <a href="#inicio">Inicio</a>
@@ -38,118 +31,79 @@
         <a href="#unidad1">Unidad 1</a>
         <a href="#unidad2">Unidad 2</a>
         <a href="#unidad3">Unidad 3</a>
-        <a href="#contacto">Contacto</a>
       </nav>
     </header>
 
-    <main class="layout">
-      <aside class="sidebar">
-        <div class="sidebar-card glass">
-          <a href="#unidad1" class="unit-link">Unidad 1 ⭐⭐⭐</a>
-          <a href="#unidad2" class="unit-link">Unidad 2 ⭐⭐⭐</a>
-          <a href="#unidad3" class="unit-link">Unidad 3 ⭐</a>
-        </div>
-      </aside>
-
-      <section class="content">
-        <section id="inicio" class="panel hero glass reveal">
-          <div class="profile-block">
-            <div class="profile-photo-frame">
-              <img class="profile-photo" src="tu-foto.svg" alt="Foto de perfil de Johana Laica" />
-            </div>
-
-            <div class="profile-info">
-              <p class="intro-label">Portafolio personal</p>
-              <h1>Johana Laica</h1>
-              <p class="hero-subtitle">Estudiante de Ingeniería en Software</p>
-              <p class="hero-copy">
-                Diseñadora de ideas, estudiante de ingeniería y creadora de proyectos con visión
-                tecnológica.
-              </p>
-              <div class="hero-actions">
-                <a href="#biografia" class="btn-primary">Mi biografía</a>
-                <a href="#contacto" class="btn-secondary">Contacto</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="biografia" class="panel section-card glass reveal">
-          <div class="section-heading">
-            <span class="section-icon">🧾</span>
-            <h2>Biografía</h2>
-          </div>
-          <div class="bio-card glass-card">
-            <p>
-              “Mi nombre es Johana Laica. Soy de la ciudad de Salcedo, tengo 20 años, me gusta
-              jugar fútbol y actualmente estudio Ingeniería en Software.”
+    <main class="portfolio-shell">
+      <section id="inicio" class="hero reveal">
+        <div class="hero-art">
+          <div class="hero-copy-block">
+            <span class="eyebrow">Portafolio personal</span>
+            <h1>Johana <span>Laica</span></h1>
+            <p class="hero-subtitle">Estudiante de Ingeniería en Software</p>
+            <p class="hero-copy">
+              Diseñadora de ideas, estudiante de ingeniería y creadora de proyectos con visión
+              tecnológica.
             </p>
+            <div class="hero-actions">
+              <a href="#biografia" class="btn-primary">Mi biografía</a>
+              <a href="#unidad1" class="btn-secondary">Ver unidades</a>
+            </div>
           </div>
-        </section>
 
-        <section id="unidad1" class="panel unit-section glass reveal">
-          <div class="section-heading">
-            <span class="section-icon">💻</span>
-            <h2>Unidad 1</h2>
+          <div class="hero-visual">
+            <div class="visual-frame glass">
+              <div class="visual-pill">Creative Tech</div>
+              <img class="hero-photo" src="tu-foto.svg" alt="Foto de perfil de Johana Laica" />
+              <div class="photo-shadow"></div>
+            </div>
           </div>
-          <div class="unit-grid">
-            <article class="unit-card glass-card">
-              <h3>Proyecto</h3>
-              <p>Añade tareas, trabajos, desarrollos o evidencias de aprendizaje.</p>
-            </article>
-            <article class="unit-card glass-card">
-              <h3>Archivo</h3>
-              <p>Incluye documentos, capturas o entregas relacionadas con tu proceso.</p>
-            </article>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <section id="unidad2" class="panel unit-section glass reveal">
-          <div class="section-heading">
-            <span class="section-icon">🛡️</span>
-            <h2>Unidad 2</h2>
-          </div>
-          <div class="unit-grid">
-            <article class="unit-card glass-card">
-              <h3>Desarrollo</h3>
-              <p>Usa este espacio para presentar trabajos avanzados o investigaciones.</p>
-            </article>
-            <article class="unit-card glass-card">
-              <h3>Innovación</h3>
-              <p>Documenta ideas, soluciones o proyectos creativos de la unidad.</p>
-            </article>
-          </div>
-        </section>
+      <section id="biografia" class="bio-section reveal">
+        <div class="section-label">Biografía</div>
+        <div class="bio-card glass">
+          <p>
+            Mi nombre es Johana Laica. Soy de la ciudad de Salcedo, tengo 20 años, me gusta
+            jugar fútbol y actualmente estudio Ingeniería en Software.
+          </p>
+        </div>
+      </section>
 
-        <section id="unidad3" class="panel unit-section glass reveal">
-          <div class="section-heading">
-            <span class="section-icon">🚀</span>
-            <h2>Unidad 3</h2>
-          </div>
-          <div class="unit-grid">
-            <article class="unit-card glass-card">
-              <h3>Entrega final</h3>
-              <p>Organiza tus evidencias más representativas de esta etapa final.</p>
-            </article>
-            <article class="unit-card glass-card">
-              <h3>Portafolio</h3>
-              <p>Sube proyectos, archivos o resultados que demuestren tu progreso.</p>
-            </article>
-          </div>
-        </section>
+      <section class="unit-showcase reveal">
+        <article id="unidad1" class="unit-card unit-card-large glass">
+          <div class="unit-tag">Unidad 1</div>
+          <div class="unit-icon">💻</div>
+          <h3>Proyecto y desarrollo</h3>
+          <p>Espacio para tareas, entregas, investigación y proyectos innovadores.</p>
+          <div class="unit-rating">⭐⭐⭐</div>
+        </article>
 
-        <section id="contacto" class="panel contact-section glass reveal">
-          <div class="section-heading">
-            <span class="section-icon">📬</span>
-            <h2>Contacto</h2>
-          </div>
-          <div class="contact-grid">
-            <div class="contact-chip glass-card">💻 Programación</div>
-            <div class="contact-chip glass-card">🧠 Tecnología</div>
-            <div class="contact-chip glass-card">📚 Ingeniería en Software</div>
-          </div>
-          <a href="#inicio" class="btn-scroll-top">Volver al inicio</a>
-        </section>
+        <article id="unidad2" class="unit-card unit-card-medium glass">
+          <div class="unit-tag">Unidad 2</div>
+          <div class="unit-icon">🛡️</div>
+          <h3>Procesos y metodologías</h3>
+          <p>Diseña, documenta y presenta tus avances con claridad y estilo.</p>
+          <div class="unit-rating">⭐⭐⭐</div>
+        </article>
+
+        <article id="unidad3" class="unit-card unit-card-small glass">
+          <div class="unit-tag">Unidad 3</div>
+          <div class="unit-icon">🚀</div>
+          <h3>Entrega final</h3>
+          <p>Portafolio personal, evidencias y proyectos que destaquen tu visión.</p>
+          <div class="unit-rating">⭐</div>
+        </article>
+      </section>
+
+      <section id="contacto" class="contact-section reveal">
+        <div class="section-label">Contacto</div>
+        <div class="contact-line glass">
+          <span>💻 Programación</span>
+          <span>🧠 Tecnología</span>
+          <span>📚 Ingeniería en Software</span>
+        </div>
       </section>
     </main>
 
