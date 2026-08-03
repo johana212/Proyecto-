@@ -23,7 +23,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
   color: var(--text);
   background:
     radial-gradient(circle at top left, rgba(202, 239, 211, 0.9), transparent 28%),
@@ -103,8 +103,9 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 16px 28px;
-  background: rgba(255, 255, 255, 0.42);
-  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.44);
+  backdrop-filter: blur(22px) saturate(140%);
+  -webkit-backdrop-filter: blur(22px) saturate(140%);
   border-bottom: 1px solid rgba(126, 186, 143, 0.24);
   box-shadow: 0 6px 24px rgba(110, 146, 116, 0.08);
 }
@@ -240,10 +241,25 @@ body {
 
 .panel {
   padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.panel::before,
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: auto -20% -40% auto;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.72), transparent 70%);
+  pointer-events: none;
 }
 
 .hero {
-  min-height: 320px;
+  min-height: 88vh;
+  padding: 44px 32px;
 }
 
 .profile-block {
@@ -277,10 +293,11 @@ body {
 
 .profile-info h1 {
   margin: 0 0 10px;
-  font-size: 3rem;
+  font-size: clamp(2.4rem, 5.8vw, 4.2rem);
   line-height: 1.08;
   letter-spacing: 0.02em;
-  font-weight: 800;
+  font-weight: 900;
+  font-family: "Manrope", "Inter", sans-serif;
 }
 
 .intro-label {
@@ -290,6 +307,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 0.72rem;
+}
+
+.hero-subtitle {
+  margin: 0 0 14px;
+  color: #5c7a64;
+  font-size: 1.16rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
 }
 
 .hero-copy {
@@ -308,7 +333,13 @@ body {
 .btn-primary,
 .btn-secondary,
 .btn-scroll-top {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-scroll-top:hover {
+  background: rgba(255, 255, 255, 0.94);
 }
 
 .btn-primary {
@@ -342,6 +373,7 @@ body {
 .section-heading h2 {
   margin: 0;
   font-size: 1.8rem;
+  font-family: "Manrope", "Inter", sans-serif;
 }
 
 .bio-card {
