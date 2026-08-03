@@ -13,11 +13,14 @@ if (particleField) {
   }
 }
 
-const navLinks = document.querySelectorAll('.nav-menu a');
+const navLinks = document.querySelectorAll('.nav-menu a, .unit-link, .btn-primary, .btn-secondary, .btn-scroll-top');
+
 navLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
-    event.preventDefault();
     const targetId = link.getAttribute('href');
+    if (!targetId || !targetId.startsWith('#')) return;
+
+    event.preventDefault();
     const target = document.querySelector(targetId);
 
     if (target) {
@@ -25,3 +28,16 @@ navLinks.forEach((link) => {
     }
   });
 });
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+document.querySelectorAll('.reveal').forEach((item) => observer.observe(item));

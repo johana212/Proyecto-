@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio Futurista | Johana Laica</title>
+    <title>Portafolio Premium | Johana Laica</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="background-orb orb-1"></div>
+    <div class="background-orb orb-2"></div>
+    <div class="background-orb orb-3"></div>
     <div class="bg-lines"></div>
     <div class="particle-field" aria-hidden="true"></div>
 
@@ -25,9 +28,11 @@
 
       <nav class="nav-menu">
         <a href="#inicio">Inicio</a>
+        <a href="#biografia">Biografía</a>
         <a href="#unidad1">Unidad 1</a>
         <a href="#unidad2">Unidad 2</a>
         <a href="#unidad3">Unidad 3</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </header>
 
@@ -41,62 +46,102 @@
       </aside>
 
       <section class="content">
-        <section id="inicio" class="panel hero glass">
+        <section id="inicio" class="panel hero glass reveal">
           <div class="profile-block">
             <div class="profile-photo-frame">
-              <img
-                class="profile-photo"
-                src="tu-foto.jpg"
-                alt="Foto de perfil de Johana Laica"
-              />
+              <img class="profile-photo" src="tu-foto.jpg" alt="Foto de perfil de Johana Laica" />
             </div>
 
             <div class="profile-info">
               <p class="intro-label">Portafolio personal</p>
               <h1>Johana Laica</h1>
-
-              <div class="bio-card glass-card">
-                <h2>Biografía</h2>
-                <p>
-                  “Mi nombre es Johana Laica. Soy de la ciudad de Salcedo, tengo 20 años,
-                  me gusta jugar fútbol y actualmente estudio Ingeniería en Software.”
-                </p>
+              <p class="hero-copy">
+                Diseñadora de ideas, estudiante de ingeniería y creadora de proyectos con visión
+                tecnológica.
+              </p>
+              <div class="hero-actions">
+                <a href="#biografia" class="btn-primary">Mi biografía</a>
+                <a href="#contacto" class="btn-secondary">Contacto</a>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="unidad1" class="panel unit-section glass">
-          <div class="section-head">
+        <section id="biografia" class="panel section-card glass reveal">
+          <div class="section-heading">
+            <span class="section-icon">🧾</span>
+            <h2>Biografía</h2>
+          </div>
+          <div class="bio-card glass-card">
+            <p>
+              “Mi nombre es Johana Laica. Soy de la ciudad de Salcedo, tengo 20 años, me gusta
+              jugar fútbol y actualmente estudio Ingeniería en Software.”
+            </p>
+          </div>
+        </section>
+
+        <section id="unidad1" class="panel unit-section glass reveal">
+          <div class="section-heading">
             <span class="section-icon">💻</span>
             <h2>Unidad 1</h2>
           </div>
-          <p>
-            Aquí puedes incluir tareas, trabajos, proyectos o evidencia de aprendizaje asociados a
-            esta unidad.
-          </p>
+          <div class="unit-grid">
+            <article class="unit-card glass-card">
+              <h3>Proyecto</h3>
+              <p>Añade tareas, trabajos, desarrollos o evidencias de aprendizaje.</p>
+            </article>
+            <article class="unit-card glass-card">
+              <h3>Archivo</h3>
+              <p>Incluye documentos, capturas o entregas relacionadas con tu proceso.</p>
+            </article>
+          </div>
         </section>
 
-        <section id="unidad2" class="panel unit-section glass">
-          <div class="section-head">
+        <section id="unidad2" class="panel unit-section glass reveal">
+          <div class="section-heading">
             <span class="section-icon">🛡️</span>
             <h2>Unidad 2</h2>
           </div>
-          <p>
-            Espacio para mostrar entregas, investigaciones, actividades o evidencias visuales del
-            proceso académico.
-          </p>
+          <div class="unit-grid">
+            <article class="unit-card glass-card">
+              <h3>Desarrollo</h3>
+              <p>Usa este espacio para presentar trabajos avanzados o investigaciones.</p>
+            </article>
+            <article class="unit-card glass-card">
+              <h3>Innovación</h3>
+              <p>Documenta ideas, soluciones o proyectos creativos de la unidad.</p>
+            </article>
+          </div>
         </section>
 
-        <section id="unidad3" class="panel unit-section glass">
-          <div class="section-head">
+        <section id="unidad3" class="panel unit-section glass reveal">
+          <div class="section-heading">
             <span class="section-icon">🚀</span>
             <h2>Unidad 3</h2>
           </div>
-          <p>
-            Puedes destacar proyectos finales, evidencias de innovación y trabajos que representen
-            tu crecimiento profesional.
-          </p>
+          <div class="unit-grid">
+            <article class="unit-card glass-card">
+              <h3>Entrega final</h3>
+              <p>Organiza tus evidencias más representativas de esta etapa final.</p>
+            </article>
+            <article class="unit-card glass-card">
+              <h3>Portafolio</h3>
+              <p>Sube proyectos, archivos o resultados que demuestren tu progreso.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contacto" class="panel contact-section glass reveal">
+          <div class="section-heading">
+            <span class="section-icon">📬</span>
+            <h2>Contacto</h2>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-chip glass-card">💻 Programación</div>
+            <div class="contact-chip glass-card">🧠 Tecnología</div>
+            <div class="contact-chip glass-card">📚 Ingeniería en Software</div>
+          </div>
+          <a href="#inicio" class="btn-scroll-top">Volver al inicio</a>
         </section>
       </section>
     </main>
