@@ -1,0 +1,19 @@
+Unidad 1 - Arquitectura del Computador y Sistemas Operativos
+
+1. ¿Qué es la arquitectura del computador?
+- Es la organización de los componentes que permiten procesar información.
+
+2. Componentes principales
+- CPU, memoria RAM, disco duro o SSD, placa madre y dispositivos de entrada/salida.
+
+3. ¿Qué es un sistema operativo?
+- Es el software que administra el hardware y facilita la interacción con el usuario.
+
+4. Funciones del sistema operativo
+- Administración de memoria, archivos, procesos, dispositivos y seguridad.
+
+5. Sistemas operativos más utilizados
+- Windows, Linux y macOS.
+
+6. Aprendizaje
+- Comprendí la importancia de cada componente y de la organización del sistema.
