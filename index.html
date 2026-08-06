@@ -121,6 +121,34 @@
           </div>
         </div>
 
+        <section class="progress-section reveal">
+          <div class="section-label">Progreso de Unidades</div>
+          <div class="progress-grid">
+            <div class="progress-pill glass">
+              <span class="progress-label">Unidad 1</span>
+              <div class="stars" aria-label="tres estrellas">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="progress-pill glass">
+              <span class="progress-label">Unidad 2</span>
+              <div class="stars" aria-label="tres estrellas">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="progress-pill glass">
+              <span class="progress-label">Unidad 3</span>
+              <div class="stars" aria-label="una estrella">
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <div class="content-grid">
           <article class="info-card glass">
             <div class="card-icon">🧠</div>
@@ -179,54 +207,176 @@
             </div>
           </article>
 
-          <article class="info-card glass">
+          <section class="os-showcase glass reveal">
             <div class="card-icon">🌐</div>
-            <h3>Sistemas operativos más utilizados</h3>
-            <div class="os-list">
-              <div class="os-item">
-                <span>🪟</span>
-                <strong>Windows</strong>
-              </div>
-              <div class="os-item">
-                <span>🐧</span>
-                <strong>Linux</strong>
-              </div>
-              <div class="os-item">
-                <span>🍎</span>
-                <strong>macOS</strong>
-              </div>
+            <h3>Sistemas operativos</h3>
+            <div class="os-grid">
+              <article class="os-card">
+                <div class="os-top">
+                  <div class="os-brand">
+                    <span class="os-icon">🪟</span>
+                    <strong>Windows</strong>
+                  </div>
+                  <button class="os-toggle" type="button">Leer más</button>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg" alt="Logo de Windows" />
+                <div class="os-body">
+                  <p><strong>¿Qué es Windows?</strong> Es un sistema operativo de Microsoft diseñado para ofrecer una experiencia intuitiva y compatible con una gran variedad de equipos.</p>
+                  <p><strong>Características:</strong> interfaz gráfica, multitarea, soporte amplio de programas y compatibilidad con hardware.</p>
+                  <p><strong>Ventajas:</strong> facilidad de uso, gran disponibilidad de software y amplia aceptación en oficinas y hogares.</p>
+                  <p><strong>Desventajas:</strong> mayor consumo de recursos y vulnerabilidad a malware si no se mantiene actualizado.</p>
+                  <p><strong>¿Dónde se utiliza?</strong> computadoras de escritorio, portátiles y algunas tablets.</p>
+                </div>
+              </article>
+
+              <article class="os-card">
+                <div class="os-top">
+                  <div class="os-brand">
+                    <span class="os-icon">🐧</span>
+                    <strong>Linux</strong>
+                  </div>
+                  <button class="os-toggle" type="button">Leer más</button>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Logo de Linux" />
+                <div class="os-body">
+                  <p><strong>¿Qué es Linux?</strong> Es un sistema operativo libre y de código abierto basado en Unix, muy valorado por su estabilidad y personalización.</p>
+                  <p><strong>Características:</strong> seguridad, flexibilidad, administración de recursos y gran variedad de distribuciones.</p>
+                  <p><strong>Ventajas:</strong> gratuito, potente, seguro y ideal para servidores y desarrollo.</p>
+                  <p><strong>Desventajas:</strong> curva de aprendizaje más alta y compatibilidad limitada con algunos programas.</p>
+                  <p><strong>¿Dónde se utiliza?</strong> servidores, computadoras personales y entornos de programación.</p>
+                </div>
+              </article>
+
+              <article class="os-card">
+                <div class="os-top">
+                  <div class="os-brand">
+                    <span class="os-icon">🍎</span>
+                    <strong>macOS</strong>
+                  </div>
+                  <button class="os-toggle" type="button">Leer más</button>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Logo de macOS" />
+                <div class="os-body">
+                  <p><strong>¿Qué es macOS?</strong> Es el sistema operativo desarrollado por Apple para sus computadoras Mac, reconocido por su diseño elegante y estabilidad.</p>
+                  <p><strong>Características:</strong> interfaz refinada, integración con otros dispositivos Apple y alto rendimiento.</p>
+                  <p><strong>Ventajas:</strong> excelente experiencia visual, seguridad y buen rendimiento en hardware optimizado.</p>
+                  <p><strong>Desventajas:</strong> menor flexibilidad para personalizar y mayor costo del ecosistema.</p>
+                  <p><strong>¿Dónde se utiliza?</strong> MacBook, iMac y otras computadoras Apple.</p>
+                </div>
+              </article>
+
+              <article class="os-card">
+                <div class="os-top">
+                  <div class="os-brand">
+                    <span class="os-icon">🤖</span>
+                    <strong>Android</strong>
+                  </div>
+                  <button class="os-toggle" type="button">Leer más</button>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Logo de Android" />
+                <div class="os-body">
+                  <p><strong>¿Qué es Android?</strong> Es un sistema operativo móvil basado en Linux, utilizado principalmente en teléfonos y tablets.</p>
+                  <p><strong>Características:</strong> personalización, integración con Google, gran variedad de dispositivos y aplicaciones.</p>
+                  <p><strong>Ventajas:</strong> amplia gama de modelos, personalización y acceso a muchas apps.</p>
+                  <p><strong>Desventajas:</strong> fragmentación del sistema y dependencia del fabricante en algunas versiones.</p>
+                  <p><strong>¿Dónde se utiliza?</strong> teléfonos inteligentes, tablets y algunos dispositivos inteligentes.</p>
+                </div>
+              </article>
+
+              <article class="os-card">
+                <div class="os-top">
+                  <div class="os-brand">
+                    <span class="os-icon">🍏</span>
+                    <strong>iOS</strong>
+                  </div>
+                  <button class="os-toggle" type="button">Leer más</button>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Apple_iOS_logo.svg" alt="Logo de iOS" />
+                <div class="os-body">
+                  <p><strong>¿Qué es iOS?</strong> Es el sistema operativo móvil de Apple para iPhone y iPad, orientado a rendimiento, privacidad y simplicidad.</p>
+                  <p><strong>Características:</strong> diseño uniforme, seguridad reforzada, integración con el ecosistema Apple y actualizaciones constantes.</p>
+                  <p><strong>Ventajas:</strong> estabilidad, privacidad, buen rendimiento y experiencia consistente.</p>
+                  <p><strong>Desventajas:</strong> menor libertad de personalización y mayor costo de los dispositivos.</p>
+                  <p><strong>¿Dónde se utiliza?</strong> iPhone, iPad y dispositivos Apple móviles.</p>
+                </div>
+              </article>
             </div>
-          </article>
+          </section>
 
           <section class="numeration-section reveal">
             <div class="section-label">Sistemas de numeración</div>
+
             <div class="numeration-grid">
               <article class="numeration-card glass">
                 <div class="card-icon">🔢</div>
-                <h3>Sistema Decimal (Base 10)</h3>
-                <p>Utiliza diez símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8 y 9.</p>
-                <div class="example-pill">Ejemplo: 245</div>
+                <h3>Sistema Decimal</h3>
+                <p><strong>¿Qué es?</strong> Es el sistema más usado por las personas porque se basa en diez símbolos.</p>
+                <p><strong>Base:</strong> 10</p>
+                <p><strong>Símbolos:</strong> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9</p>
+                <p><strong>¿Cómo funciona?</strong> Cada posición tiene un valor según potencias de 10.</p>
+                <p><strong>Uso en informática:</strong> se usa en operaciones humanas y en la lectura de datos.</p>
+                <p><strong>Ventajas:</strong> intuitivo y fácil de aprender.</p>
+                <p><strong>Desventajas:</strong> no es ideal para representar estados electrónicos simples.</p>
+                <div class="example-pill">Ejemplos: 245, 1024, 58</div>
+                <div class="conversion-block">
+                  <strong>Conversión:</strong> 245 = 2×10² + 4×10 + 5 = 245.
+                </div>
+                <div class="fun-fact">Dato curioso: nuestro sistema numérico moderno proviene de la tradición hindú y árabe.</div>
+                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80" alt="Ilustración de cálculo y números" />
               </article>
 
               <article class="numeration-card glass">
                 <div class="card-icon">0 1</div>
-                <h3>Sistema Binario (Base 2)</h3>
-                <p>Solo emplea dos símbolos: 0 y 1, muy usado en computación.</p>
-                <div class="example-pill">Ejemplo: 1011₂</div>
+                <h3>Sistema Binario</h3>
+                <p><strong>¿Qué es?</strong> Es el lenguaje básico de las computadoras, ya que solo usa dos estados.</p>
+                <p><strong>Base:</strong> 2</p>
+                <p><strong>Símbolos:</strong> 0 y 1</p>
+                <p><strong>¿Cómo funciona?</strong> Cada bit representa una potencia de 2.</p>
+                <p><strong>Uso en informática:</strong> procesamiento, memoria, datos y lógica digital.</p>
+                <p><strong>Ventajas:</strong> fácil de implementar con circuitos electrónicos.</p>
+                <p><strong>Desventajas:</strong> requiere más dígitos para representar números grandes.</p>
+                <div class="example-pill">Ejemplos: 1010₂, 1101₂, 1001₂</div>
+                <div class="conversion-block">
+                  <strong>Conversión:</strong> 1011₂ = 1×2³ + 0×2² + 1×2 + 1 = 11.
+                </div>
+                <div class="fun-fact">Dato curioso: el sistema binario es el fundamento de toda la computación digital.</div>
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Ilustración de circuitos electrónicos" />
               </article>
 
               <article class="numeration-card glass">
                 <div class="card-icon">🧮</div>
-                <h3>Sistema Octal (Base 8)</h3>
-                <p>Usa ocho símbolos, desde 0 hasta 7, y resulta práctico en sistemas digitales.</p>
-                <div class="example-pill">Ejemplo: 37₈</div>
+                <h3>Sistema Octal</h3>
+                <p><strong>¿Qué es?</strong> Es un sistema que agrupa bits de forma compacta usando ocho símbolos.</p>
+                <p><strong>Base:</strong> 8</p>
+                <p><strong>Símbolos:</strong> 0, 1, 2, 3, 4, 5, 6, 7</p>
+                <p><strong>¿Cómo funciona?</strong> Cada posición equivale a potencias de 8.</p>
+                <p><strong>Uso en informática:</strong> se emplea en programación y sistemas antiguos de bajo nivel.</p>
+                <p><strong>Ventajas:</strong> más compacto que el binario y muy útil para agrupar bits.</p>
+                <p><strong>Desventajas:</strong> hoy se usa menos que el hexadecimal.</p>
+                <div class="example-pill">Ejemplos: 37₈, 12₈, 75₈</div>
+                <div class="conversion-block">
+                  <strong>Conversión:</strong> 37₈ = 3×8 + 7 = 31 en decimal.
+                </div>
+                <div class="fun-fact">Dato curioso: el octal fue muy usado en computadoras antiguas y en permisos Unix.</div>
+                <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=900&q=80" alt="Ilustración de tecnología y programación" />
               </article>
 
               <article class="numeration-card glass">
                 <div class="card-icon">#</div>
-                <h3>Sistema Hexadecimal (Base 16)</h3>
-                <p>Emplea dieciséis símbolos, incluyendo letras A a F para valores mayores.</p>
-                <div class="example-pill">Ejemplo: 2F₁₆</div>
+                <h3>Sistema Hexadecimal</h3>
+                <p><strong>¿Qué es?</strong> Es un sistema muy usado en programación y electrónica porque representa datos binarios de forma compacta.</p>
+                <p><strong>Base:</strong> 16</p>
+                <p><strong>Símbolos:</strong> 0-9 y A-F</p>
+                <p><strong>¿Cómo funciona?</strong> Cada posición tiene un valor según potencias de 16.</p>
+                <p><strong>Uso en informática:</strong> colores, direcciones de memoria, depuración y programación.</p>
+                <p><strong>Ventajas:</strong> es breve y muy práctico para trabajar con binario.</p>
+                <p><strong>Desventajas:</strong> puede resultar menos intuitivo para quienes no conocen el sistema.</p>
+                <div class="example-pill">Ejemplos: 2F₁₆, A5₁₆, 1C₁₆</div>
+                <div class="conversion-block">
+                  <strong>Conversión:</strong> 2F₁₆ = 2×16 + 15 = 47 en decimal.
+                </div>
+                <div class="fun-fact">Dato curioso: se usa mucho para representar colores como #FF5733.</div>
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80" alt="Ilustración de desarrollo web y tecnología" />
               </article>
             </div>
 
@@ -238,7 +388,9 @@
                     <tr>
                       <th>Sistema</th>
                       <th>Base</th>
-                      <th>Símbolos utilizados</th>
+                      <th>Símbolos</th>
+                      <th>Cantidad de dígitos</th>
+                      <th>Uso principal</th>
                       <th>Ejemplo</th>
                     </tr>
                   </thead>
@@ -247,29 +399,42 @@
                       <td>Decimal</td>
                       <td>10</td>
                       <td>0-9</td>
+                      <td>10</td>
+                      <td>Uso cotidiano</td>
                       <td>245</td>
                     </tr>
                     <tr>
                       <td>Binario</td>
                       <td>2</td>
                       <td>0 y 1</td>
+                      <td>2</td>
+                      <td>Informática y electrónica</td>
                       <td>1011₂</td>
                     </tr>
                     <tr>
                       <td>Octal</td>
                       <td>8</td>
                       <td>0-7</td>
+                      <td>8</td>
+                      <td>Representación compacta de bits</td>
                       <td>37₈</td>
                     </tr>
                     <tr>
                       <td>Hexadecimal</td>
                       <td>16</td>
                       <td>0-9 y A-F</td>
+                      <td>16</td>
+                      <td>Programación y redes</td>
                       <td>2F₁₆</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+            </article>
+
+            <article class="applications-card glass">
+              <h3>Aplicaciones en la vida real</h3>
+              <p>El sistema decimal se usa en la vida diaria para contar dinero, medir cantidades y realizar operaciones cotidianas. El binario es fundamental en computadoras, microprocesadores, memorias y lógica digital. El octal sirve para representar permisos en sistemas Unix y para simplificar grupos de bits. El hexadecimal aparece en programación, diseño web, redes, direcciones de memoria y códigos de colores.</p>
             </article>
           </section>
 

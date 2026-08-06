@@ -41,3 +41,35 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll('.reveal').forEach((item) => observer.observe(item));
+
+const osCards = document.querySelectorAll('.os-card');
+
+osCards.forEach((card) => {
+  const toggle = card.querySelector('.os-toggle');
+  const body = card.querySelector('.os-body');
+
+  if (!toggle || !body) return;
+
+  body.style.maxHeight = '0';
+  body.style.overflow = 'hidden';
+  body.style.opacity = '0';
+  body.style.transition = 'max-height 0.35s ease, opacity 0.35s ease, margin-top 0.35s ease';
+
+  toggle.addEventListener('click', () => {
+    const isOpen = toggle.dataset.open === 'true';
+
+    if (isOpen) {
+      body.style.maxHeight = '0';
+      body.style.opacity = '0';
+      body.style.marginTop = '0';
+      toggle.dataset.open = 'false';
+      toggle.textContent = 'Leer más';
+    } else {
+      body.style.maxHeight = '420px';
+      body.style.opacity = '1';
+      body.style.marginTop = '10px';
+      toggle.dataset.open = 'true';
+      toggle.textContent = 'Leer menos';
+    }
+  });
+});
