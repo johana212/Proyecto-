@@ -1,1 +1,6 @@
-File not found: /v1/AUTH_mw/wikipedia-commons-local-public.6d/6/6d/Apple_iOS_logo.svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Logo de iOS">
+  <rect x="64" y="64" width="384" height="384" rx="96" fill="#111827"/>
+  <rect x="152" y="152" width="208" height="208" rx="48" fill="#f8fafc"/>
+  <circle cx="256" cy="256" r="56" fill="#111827"/>
+  <rect x="218" y="96" width="76" height="72" rx="18" fill="#111827"/>
+</svg>
