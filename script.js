@@ -29,18 +29,24 @@ navLinks.forEach((link) => {
   });
 });
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  },
-  { threshold: 0.15 }
-);
+const revealItems = document.querySelectorAll('.reveal');
 
-document.querySelectorAll('.reveal').forEach((item) => observer.observe(item));
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add('visible'));
+}
 
 const osCards = document.querySelectorAll('.os-card');
 
@@ -50,10 +56,13 @@ osCards.forEach((card) => {
 
   if (!toggle || !body) return;
 
-  body.style.maxHeight = '0';
+  body.style.maxHeight = '640px';
   body.style.overflow = 'hidden';
-  body.style.opacity = '0';
+  body.style.opacity = '1';
+  body.style.marginTop = '10px';
   body.style.transition = 'max-height 0.35s ease, opacity 0.35s ease, margin-top 0.35s ease';
+  toggle.dataset.open = 'true';
+  toggle.textContent = 'Leer menos';
 
   toggle.addEventListener('click', () => {
     const isOpen = toggle.dataset.open === 'true';
@@ -65,7 +74,7 @@ osCards.forEach((card) => {
       toggle.dataset.open = 'false';
       toggle.textContent = 'Leer más';
     } else {
-      body.style.maxHeight = '420px';
+      body.style.maxHeight = '640px';
       body.style.opacity = '1';
       body.style.marginTop = '10px';
       toggle.dataset.open = 'true';
